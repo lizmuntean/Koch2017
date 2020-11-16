@@ -1,0 +1,58 @@
+"Table S1 The isolate number (first column) represents the isolates as shown in Fig. 1 from left to right. The majority of isolates were obtained from the International Culture Collection of (Vesicular) Arbuscular Mycorrhizal Fungi (INVAM) and much additional information on the culture history of these isolates can be found on the INVAM webpage (http://invam.caf.wvu.edu). Abbreviations of main AM fungal taxa as shown in Fig. 1 are given in the column B (Genus). Some AM fungal taxa were recently re-classified (http://schuessler.userweb.mwn.de/amphylo/Schuessler&Walker2010_Glomeromycota.pdf) (Schussler & Walker, 2010) and their new genus names are given in the same column in [square brackets]. The last columns (E-I) contain information about the geographic origins of the isolates. In cases where we lacked detailed information about the origin of an isolate, the largest (or most central) city of a country/region is given as reference of origin in open brackets (e.g. “Seoul” for isolate # 1, KR102).",,,,,,,,
+Isolate no.,Genus,Species,Culture Origin,Isolate ID,Country/region,Location/City,Lat (°N),Long (°W)
+1,Acaulospora,A. morrowiae,INVAM,KR102,Korea,unknown (Seoul),37.57,127.17
+2,(Ac.),(mor),INVAM,BR225,Brazil,unknown (Campinas),-22.90,-47.05
+3,,,INVAM,EY106,Egypt,unknown (Cairo),30.05,31.22
+4,,,INVAM,CR207,Costa Rica,Guanacaste Conservation Reserve,10.83,-85.32
+5,,,INVAM,FL219B,Florida,unknown (Orlando),28.53,-81.37
+6,,A. scrobiculata,INVAM,VA104,Virginia,Assateague Island (Norfolk),37.33,-75.97
+7,,(scr),INVAM,BR602,Brazil,Florianopolis,-27.83,-48.60
+8,,,INVAM,CU130,Cuba,La Habana,23.13,-82.38
+9,Entrophospora,E. colombiana,INVAM,GA101,Georgia,unknown (Atlanta),33.75,-84.38
+10,(Ent.),(col),INVAM,NB104C,Namibia,unknown (Windhoek),-22.57,17.85
+11,,,INVAM,CL356,Colombia,Carimagua,4.57,-71.33
+12,,E. contigua,INVAM,VA105E,Virginia,Assateague Island (Norfolk),37.33,-75.97
+13,,(con),INVAM,WV201,West Virginia,Morgantown,39.67,-79.78
+14,Gigaspora,G. margarita,INVAM,JA201A,Japan/Hokkaido,Kitami,43.77,143.73
+15,(Gi.),(mar),INVAM,WV205A,West Virginia,Kaerneyville (Frederick),39.38,-77.88
+16,,,INVAM,MR104,Morocco,unknown (Casablanca),33.50,-7.42
+17,,G. rosea,INVAM,BR151A,Brazil,Campinas,-22.90,-47.05
+18,,(ros),INVAM,FL219A,Florida,unknown (Orlando),28.53,-81.37
+19,Scutellospora,S. heterogama,INVAM,WV858B,West Virginia,Manown (Morgantown),39.38,-77.88
+20,(Sc.),(het),INVAM,SN722,Singapore,Singapore,1.28,103.83
+21,,S. dipurpurascens,INVAM,IL101,Illinois,Batavia (Chicago),41.85,-88.32
+22,,(dip),INVAM,MX921,Mexico,unknown (MexicoCity),19.43,-99.13
+23,Glomus (Group Aa),G. mosseae,INVAM,HO102,Holland,unknown (Amsterdam),52.37,4.88
+24,(Gl. Aa),(mos),INVAM,NB114,Namibia,unknown (Windhoek),-22.57,17.85
+25,[Funnuliformis],,INVAM,CU114,Cuba,La Habana,23.13,-82.38
+26,,G. caledonium,INVAM,UK112A,England,Harpenden,51.80,-0.35
+27,,(cal),INVAM,HA692B,Hawaii,sanddune (Honolulu),21.30,-157.82
+28,Glomus (Group Ab),G. intraradices,INVAM,IC101,Iceland,Reykjavik,64.13,-21.93
+29,(Gl. Ab),(intra),"Klironomos Lab, University of Guelph",ON.PT3,Ontario,Guelph,43.55,-80.25
+30,[Rhizophagus],,INVAM,TU101,Turkey,unknown (Ankara),39.87,32.87
+31,,,INVAM,KE103,Kenya,Baringo (Nairobi),0.85,36.17
+32,,,INVAM,IS185,Israel,unknown (Jerusalem),31.78,35.22
+33,,G. irregulare,Klironomos Lab,DAOM 197198,Quebec,Pont Rouge (Quebec City),46.75,-71.68
+34,,(irreg),"Sanders Lab, University of Lausanne",A4,Switzerland,Tänikon (Winterthur),47.48,8.95
+35,,,"Sanders Lab, University of Lausanne",B3,Switzerland,Tänikon (Winterthur),47.48,8.95
+36,,,"Sanders Lab, University of Lausanne",C2,Switzerland,Tänikon (Winterthur),47.48,8.95
+37,,,"Sanders Lab, University of Lausanne",C3,Switzerland,Tänikon (Winterthur),47.48,8.95
+38,,,"Sanders Lab, University of Lausanne",D1,Switzerland,Tänikon (Winterthur),47.48,8.95
+39,Glomus (Group B),G. claroideum,INVAM,DN987,Denmark,Askov (Kopenhagen; SouthernJutland),55.47,9.10
+40,(Gl. B),(clar),INVAM,UT159A,Utah,unknown (SaltLakeCity),40.75,-111.88
+41,[Claroideoglomus],,INVAM,BR106,Brazil,Planaltina (Brasilia),-15.80,-47.90
+42,,G. etunicatum,INVAM,UT183A,Utah,unknown (SaltLakeCity),40.75,-111.88
+43,,(etun),INVAM,SP108C,Spain,Granda,37.18,-3.60
+44,,,INVAM,MG106,Madagascar,unknown (Antananarivo),-18.92,47.50
+45,,,INVAM,NB119,Namibia,unknown (Windhoek),-22.57,17.85
+46,,,INVAM,MX116A,Mexico,site11-4,29.10,-110.95
+47,Paraglomus,P. occultum,INVAM,OR924,Oregon,unknown (Portland),45.52,-122.68
+48,(Pa.),(occu),INVAM,VZ103C,Venezuela,El Tigre,10.00,-64.00
+49,,,INVAM,CR102,Costa Rica,Guacimo (San Jose),9.93,-84.08
+50,,,INVAM,HA771,Hawaii,sanddune (Honolulu),21.30,-157.82
+51,Ambispora,A. leptoticha,INVAM,ON205,Ontario,unknown (Guelph),43.55,-80.25
+52,(Am.),(lept),INVAM,JA401A,Japan,unknown (Nagoya),35.18,136.90
+53,,,INVAM,CR312,Costa Rica,San Vito (san Jose),8.82,-82.97
+54,,,INVAM,FL130A,Florida,unknown (Orlando),28.53,-81.37
+55,Archaeospora,A. trappei,INVAM,AK101A,Alaska,Rosie Creek (Fairbanks),64.83,-147.72
+56,(Ar.),(trap),INVAM,MG110,Madagascar,unknown (Antananarivo),-18.92,47.50
