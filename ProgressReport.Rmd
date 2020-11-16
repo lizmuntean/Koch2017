@@ -1,0 +1,24 @@
+---
+title: "ProgressReport"
+author: "Liz Muntean"
+date: "11/16/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+November 16, 2020
+
+Working to convert excel tables into csv. Some trouble with the headers and the formatting, need to be sorted out manually.
+
+email to corresponding author:
+
+Hello Dr. Klironomos,
+
+I very much enjoyed your 2017 paper in New Phytologist, Evolutionary asymmetry in the arbuscular mycorrhizal symbiosis, conservatism in fungal morphology does not predict host plant growth. I am currently a Master's student at Tulane University in Louisiana participating in a Data and Software class for biologists learning how to code and reproduce the results from scientific papers. The figures in your paper are compelling to me and I believe learning how to create them would be very useful for my research. I am particularly interest in reproducing Figure 2. Is there any chance you would be able to share the code you used to make the figure? I would be beyond grateful. Thank you so much for your time!
+
+Sincerely,
+
+Liz Muntean

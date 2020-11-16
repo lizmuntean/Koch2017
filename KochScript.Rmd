@@ -1,0 +1,24 @@
+---
+title: "KochScript"
+author: "Liz Muntean"
+date: "11/16/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+rm(list=ls())
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dplyr)
+```
+
+```{r}
+tables3<-read.csv("./data/TableS3.csv")
+table_3=select(tables3,Trait,Host,sum.CIr)
+table_3<-table_3 %>% filter(Host == "Overall")
+table_3<-select(table_3, Trait, sum.CIr)
+#having some trouble factoring the "trait" column, not sure why...
+print(table_3)
+
+```
+

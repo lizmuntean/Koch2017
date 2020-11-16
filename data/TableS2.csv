@@ -1,0 +1,60 @@
+
+,DF.num,DF.den,denom,F,%VarCo,LS,F,%VarCo,LS
+Host (Ho),2,1722,ResErr,116.46,35.85,***,0.84,-0.00,
+Time (Ti) ,2,1722,ResErr,125.1,38.21,***,17.02,2.50,***
+Inoculation (AMF),1,1722,ResErr,11.49,2.17,***,792.64,83.00,***
+Ho x Ti,4,1722,ResErr,2.74,1.61,*,1.54,0.25,
+Ho x AMF,2,1722,ResErr,1.76,0.47,,7.38,2.01,***
+Ti x AM,2,1722,ResErr,0.18,-0.51,,2.77,0.55,*
+Ho x Ti x AMF,4,1722,ResErr,0.27,-1.34,,0.75,-0.24,
+Res,1722,,,,23.55,,,11.93,
+Total,1739,,,,,,,,
+,,,,,,,,,
+Table S2(b),,,,,,,,,
+,Trait,,,DW^0.4,,,(R / S)^0.5,,
+,DF.num,DF.den,denom,F,%VarCo,LS,F,%VarCo,LS
+Host (Ho),2,78,Ho x Iso(Sp),162.87,31.08,***,192.93,31.13,***
+Time (Ti),2,78,Ti x Iso(Sp),816.37,39.30,***,18.71,2.64,***
+Species (Sp),16,39,Isolate(Sp),1.30,0.32,,1.30,0.20,
+Isolate(Sp),39,1176,ResErr,5.53,2.83,***,1.14,0.26,
+Ho x Ti,4,156,Ho x Ti x Iso(Sp),14.62,1.29,***,17.38,6.08,***
+Ho x Sp,32,78,Ho x Iso(Sp),0.91,-0.25,,0.94,-1.37,
+Ti x Sp,32,78,Ti x Iso(Sp),0.56,-0.31,,1.02,0.05,
+Ho x Iso(Sp),78,1176,ResErr,4.98,7.48,***,1.38,2.18,*
+Ti x Iso(Sp),78,1176,ResErr,1.26,0.49,+,1.28,1.60,+
+Ho x Ti x Sp,64,156,Ho x Ti x Iso(Sp),1.23,0.32,,1.00,0.02,
+Ho x Ti x Iso(Sp),156,1176,ResErr,0.83,-0.97,,1.06,1.06,
+Res,1176,,,,18.42,,,56.15,
+Total,1679,,,,,,,,
+,,,,,,,,,
+,Trait,,,(AC+1)^0.5,,,(RLA+1)^0.2,,
+,DF.num,DF.den,denom,F,%VarCo,LS,F,%VarCo,LS
+Host (Ho),2,78,Ho x Iso(Sp),1.60,0.11,,282.38,30.08,***
+Time (Ti),2,78,Ti x Iso(Sp),9.66,1.42,***,155.89,13.68,***
+Species (Sp),16,39,Isolate(Sp),36.23,20.87,***,31.718,11.40,***
+Isolate(Sp),39,1176,ResErr,0.74,-0.66,,0.83,-0.24,
+Ho x Ti,4,156,Ho x Ti x Iso(Sp),0.34,-0.26,,9.2,1.83,***
+Ho x Sp,32,78,Ho x Iso(Sp),0.59,-1.12,,0.87,-0.21,
+Ti x Sp,32,78,Ti x Iso(Sp),2.77,4.33,***,1.93,1.22,*
+Ho x Iso(Sp),78,1176,ResErr,1.14,1.08,,1.19,0.84,
+Ti x Iso(Sp),78,1176,ResErr,1.03,0.24,,0.99,-0.03,
+Ho x Ti x Sp,64,156,Ho x Ti x Iso(Sp),1.24,1.42,,1.2,0.67,
+Ho x Ti x Iso(Sp),156,1176,ResErr,0.83,-3.89,,0.84,-2.12,
+Res,1176,,,,76.48,,,42.88,
+Total,1679,,,,,,,,
+,,,,,,,,,
+,Trait,,,LOG(FV),,,% Rel. FI,,
+,DF.num,DF.den,denom,F,%VarCo,LS,F,%VarCo,LS
+Host (Ho),2,78,Ho x Iso(Sp),35.87,5.51,***,105.29,15.16,***
+Time (Ti),2,78,Ti x Iso(Sp),175.93,15.11,***,37.44,3.95,***
+Species (Sp),16,39,Isolate(Sp),29.48,14.96,***,55.78,25.78,***
+Isolate(Sp),39,1176,ResErr,1.05,0.08,,1.04,0.05,
+Ho x Ti,4,156,Ho x Ti x Iso(Sp),1.90,0.30,,4.12,1.01,**
+Ho x Sp,32,78,Ho x Iso(Sp),4.51,8.27,***,1.17,0.36,
+Ti x Sp,32,78,Ti x Iso(Sp),3.02,2.60,***,2.62,2.62,***
+Ho x Iso(Sp),78,1176,ResErr,1.57,2.78,***,1.59,2.63,***
+Ti x Iso(Sp),78,1176,ResErr,0.86,-0.67,,1.20,0.87,+
+Ho x Ti x Sp,64,156,Ho x Ti x Iso(Sp),1.27,1.35,,1.27,1.33,+
+Ho x Ti x Iso(Sp),156,1176,ResErr,1.10,1.45,,1.19,2.56,*
+Res,1176,,,,48.27,,,43.67,
+Total,1679,,,,,,,,
