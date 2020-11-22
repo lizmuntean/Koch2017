@@ -17,8 +17,27 @@ tables3<-read.csv("./data/TableS3.csv")
 table_3=select(tables3,Trait,Host,sum.CIr)
 table_3<-table_3 %>% filter(Host == "Overall")
 table_3<-select(table_3, Trait, sum.CIr)
-#having some trouble factoring the "trait" column, not sure why...
-print(table_3)
-
+vectable<-table_3
+class(vectable$Trait)
+vectable$Trait<-as.factor(vectable$Trait)
+vectable$Trait<-factor(vectable$Trait,levels = vectable$Trait[order(-vectable$sum.CIr)])
+print(vectable)
+ 
+```
+```{r}
+ggplot(vectable)+
+  geom_point(aes(x=Trait, y=sum.CIr), shape=1)+
+  geom_vline(xintercept = 2.5)+
+  annotate("text", x=1.25, y=80, label="Plant traits")+
+  annotate("text", x=4, y=80, label="Fungal volume traits")+
+  xlab("Trait")+
+  ylab("Contribution index (%) to variance at species-level nodes")+
+  ylim(c(0,80))+
+  theme(
+    panel.background = element_rect(fill = "white", color = NA),
+    panel.border = element_rect(fill = NA, colour = "grey20"),
+    axis.text.x = element_text(angle=45, vjust = 0.5)
+    )
+   
 ```
 

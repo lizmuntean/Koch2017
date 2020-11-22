@@ -8,6 +8,9 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+November 22, 2020
+
+As the lead author never got back to me I started working on the code myself. I was able to construct a data frame from the data plotting half of the points (only the least-squares adjusted mean points) and plot it in a similar manner to how the authors constructed Figure 3 in their paper. Plotting the other half of the points (the arithmetic mean with standard error bars) will take more manipulation of the data and the creation of another data frame in order for those points to be included in the figure as well. My x-axis is not quite in the same order as the authors but ranking the values from highest to lowest was the closest way I could get to having my graph look like theirs. 
 
 November 16, 2020
 
