@@ -1,0 +1,78 @@
+---
+title: "Final Report"
+author: "Liz Muntean"
+date: "12/2/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+rm(list=ls())
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dplyr)
+```
+
+
+## Introduction
+
+I attempted to reproduce Figure 3 from the paper "Evolutionary asymmetry in the arbuscular mycorrhizal symbiosis: conservatism in fungal morphology does not predict host plant growth" published in New Phytologist by Koch et al. in 2017. 
+
+I sent an email to the corresponding author as follows:
+
+Hello Dr. Klironomos,
+
+I very much enjoyed your 2017 paper in New Phytologist, Evolutionary asymmetry in the arbuscular mycorrhizal symbiosis, conservatism in fungal morphology does not predict host plant growth. I am currently a Master's student at Tulane University in Louisiana participating in a Data and Software class for biologists learning how to code and reproduce the results from scientific papers. The figures in your paper are compelling to me and I believe learning how to create them would be very useful for my research. I am particularly interest in reproducing Figure 2. Is there any chance you would be able to share the code you used to make the figure? I would be beyond grateful. Thank you so much for your time!
+
+Sincerely,
+Liz Muntean
+
+He never replied so I set to work on building my own code.
+The available data were in excel tables which I had to reformat and transform into csv files. There were layers of headers and many blank cells that needed to be cleaned up, along with metadata text that I extracted and placed in the README.md file. In order to reproduce the figure I extracted two columns of data and built a table into the dataframe constructed by the following code.
+
+
+```{r}
+tables3<-read.csv("./data/TableS3.csv")
+table_3=select(tables3,Trait,Host,sum.CIr)
+table_3<-table_3 %>% filter(Host == "Overall")
+table_3<-select(table_3, Trait, sum.CIr)
+vectable<-table_3
+class(vectable$Trait)
+vectable$Trait<-as.factor(vectable$Trait)
+vectable$Trait<-factor(vectable$Trait,levels = vectable$Trait[order(-vectable$sum.CIr)])
+print(vectable)
+```
+
+With the created dataframe I then constructed a figure similar to Figure 3 found in the paper. I was able to construct a data frame from the data plotting half of the points-- only the least-squares adjusted mean points. Plotting the other half of the points (the arithmetic mean with standard error bars) would take more simple and very similar manipulation of the data and the creation of another data frame in order for those points to be included in the figure as well. I chose not to do this as it was the end of the semester and it would not have taught me anything I didn't already know how to do. My x-axis is not quite in the same order as the authors but ranking the values from highest to lowest was the closest way I could get to having my graph look like theirs. 
+
+```{r}
+ggplot(vectable)+
+  geom_point(aes(x=Trait, y=sum.CIr), shape=1)+
+  geom_vline(xintercept = 2.5)+
+  annotate("text", x=1.25, y=80, label="Plant traits")+
+  annotate("text", x=4, y=80, label="Fungal volume traits")+
+  xlab("Trait")+
+  ylab("Contribution index (%) to variance at species-level nodes")+
+  ylim(c(0,80))+
+  theme(
+    panel.background = element_rect(fill = "white", color = NA),
+    panel.border = element_rect(fill = NA, colour = "grey20"),
+    axis.text.x = element_text(angle=45, vjust = 0.5)
+    )
+   
+```
+The plot shows the percent variance of each trait at species-level nodes, with each trait measured listed on the x axis. DW is dry weight and R/S is root to shoot ratio. The caption of Figure 3 in the paper reads " total arbuscular, vesicular and root hyphal volumes (Arb.V, Ves.V and Root.HV, respectively), total extraradical hyphal volume (EHV), number of AM fungal spores g–1 dried substrate (Spore#), total arbuscular mycorrhizal (AM) fungal spore volume (SporeV), root fungal volume (Root.FV, i.e. the sum of Arb.V, Ves.V and Root.HV), total soil fungal volume (Soil.FV, i.e. the sym of EHV and SporeV), total fungal volume (Tot.FV, i.e. the sum of Root.FV and Soil.FV), the percentage of Root.FV from the FV (%RVF) and the percentage of SporeV from the Soil.FV (%SV)."
+
+
+## Conclusion
+
+Despite no communication from the authors I found the paper to be fairly replicable. The table I was able to create code for is not exactly identical but it does show the same data and same general figure. The data available was extensive, though to recreate the figures the tables needed to be manipulated quite a bit. I only had time to try to replicate Figure 3, so I can't say how easy or possible it would be to replicate the first two figures. The paper would be more easily replicable if the data itself was available in a form that can recreate the figures without manipulation but the data available is extensive and accessible to do the replication. 
+
+The repository for the project can be found at:
+https://github.com/lizmuntean/Koch2017
+
+This document can be replicated by opening the file "Final_Report.Rmd" and knitting to pdf. 
+
+
+## Bibliography
+
+Koch, A.M., Antunes, P.M., Maherali, H., Hart, M.M., Klironomos, J.N. (2017) Evolutionary asymmetry in the arbuscular mycorrhizal symbiosis: conservatism in fungal morphology does not predict host plant growth *New Phytologist* **214**: 1330–1337 doi: 10.1111/nph.14465
